@@ -1,8 +1,496 @@
+<!DOCTYPE HTML>
 <html>
 <head>
+    <title>Peter Hoang</title>
+    
+    <!-- perstrok.js -->
+    <script src="https://cdn.jsdelivr.net/perstrok.js/1.0.1/perstrok.min.js"></script>
+   
+    <!-- isotope -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Spinning Wheel -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+     
+    <!-- link to your CSS files here -->
+    <!-- maybe link to your js here, maybe at the end of body --> 
+	
+	<link href="style.css" rel="stylesheet" type="text/css" />	
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+	
+<meta name="viewport" content="width=device-width">
+
+
+
+
 </head>
+
 <body>
-    <h1>Awesome design!</h1>
-By Peter Hoang
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+
+
+    <a id="instagram" href="#"> <img src="images/instagram.svg"></a>
+    <a id="email" href="#"> <img src="images/email.svg"></a>
+    <a id="resume" href="#">RESUME</a>
+
+    <nav>
+        <a id="logo" href="index.html"> <img src="images/logo.svg" alt="my logo">
+        </a>
+        <a href="#buttongroup">Work</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    
+
+    <!-- mobile nav -->
+    <div id= "mobilenav">
+		<div id="menuToggle">
+			<input type="checkbox" />
+			<span></span>
+			<span class="navtitle">MENU</span>
+			<span></span>
+			<ul id="menu">
+				<a href="#">
+					<li>Work</li>
+				</a>
+				<a href="#">
+					<li>About</li>
+				</a>
+				<a href="#">
+					<li>Contact</li>
+				</a>
+				<a href="#">
+					<li>Resume</li>
+				</a>
+			</ul>
+		</div>
+	</div>
+
+</nav>
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+    <div id="container">
+
+   <header>
+        <div id="intro">Nice to meet you!</div>
+        <div id="intro2">I'm Peter Hoang.</div>
+
+        <div id="intro-tablet">Nice to meet you!</div>
+        <div id="intro2-tablet">I'm Peter Hoang.</div>
+
+        <div id="intro-mobile">Nice to meet you!</div>
+        <div id="intro2-mobile">I'm Peter Hoang</div>
+    
+
+
+        <div id="wheel"><img src="images/wheel.png"></div>   
+        
+        <div id="wheel-mobile"><img src="images/wheel.png"></div> 
+    </header>
+    
+   
+
+
+   <div id="gallery">
+
+        <div id="buttongroup" class="button-group filters-button-group">
+            <button class="button is-checked" data-filter="*">show all</button>
+            <button class="button" data-filter=".ux">UX</button>
+            <button class="button" data-filter=".artdirection">Art Direction</button>
+            <button class="button" data-filter=".advertising">Advertising</button>
+            <button class="button" data-filter=".graphicdesign">Graphic Design</button>
+            <button class="button" data-filter=".photography">Photography</button>
+            <button class="button" data-filter=".code">Code</button>
+        </div>
+
+        <div class="grid">
+            <div class="grid-item ux">
+                <a href="#">
+                <div class="galtext">
+                <h2>Mindamins</h2>
+                <h3>Daily Quote App</h3>
+                </div>
+                <img src="images/thumbnail-mindamins.jpg"></a></div>
+
+                <div class="grid-item ux graphicdesign">
+                    <a href="#">
+                    <div class="galtext">
+                    <h2>Cruisewatch</h2>
+                    <h3>Website Redesign & Rebrand</h3>
+                    </div>
+                    <img src="images/thumbnail-cruisewatch.jpg"></a></div>
+
+                    <div class="grid-item ux code artdirection">
+                        <a href="#">
+                        <div class="galtext">
+                        <h2>Time to Watch</h2>
+                        <h3>Website Design</h3>
+                        </div>
+                        <img src="images/thumbnail-timetowatch.jpg"></a></div>
+                        
+                    <div class="grid-item advertising graphicdesign artdirection photography">
+                        <a href="#">
+                        <div class="galtext herefortheholidays">
+                        <h2>#herefortheholidays</h2>
+                        <h3>Ad Campaign</h3>
+                        </div>
+                        <img src="images/thumbnail-herefortheholidays.jpg"></a></div>
+                        
+                    <div class="grid-item ux graphicdesign photography">
+                        <a href="#">
+                        <div class="galtext">
+                        <h2>Pho Viet Royal</h2>
+                        <h3>Website Redesign & Rebrand</h3>
+                        </div>
+                        <img src="images/thumbnail-pho.jpg"></a></div>
+                        
+                    <div class="grid-item artdirection graphicdesign">
+                        <a href="#">
+                        <div class="galtext kem">
+                        <h2>KEM Ice Cream Lounge</h2>
+                        <h3>Branding & Brand Invention</h3>
+                        </div>
+                        <img src="images/thumbnail-kem.jpg"></a></div>
+                        
+                    <div class="grid-item advertising artdirection">
+                        <a href="#">
+                        <div class="galtext f91w">
+                        <h2>F-91w: Smarten Down</h2>
+                        <h3>Ad Campaign</h3>
+                        </div>
+                        <img src="images/thumbnail-f91w.jpg"></a></div>
+                        
+                    <div class="grid-item artdirection graphicdesign">
+                        <a href="#">
+                        <div class="galtext together">
+                        <h2>Together Under the Stars</h2>
+                        <h3>Album Design</h3>
+                        </div>
+                        <img src="images/thumbnail-together.jpg"></a></div>
+                
+
+                        <div class="grid-item artdirection graphicdesign">
+                            <a href="#">
+                            <div class="galtext">
+                            <h2>5 Second Rule</h2>
+                            <h3>Editorial Design</h3>
+                            </div>
+                            <img src="images/thumbnail-magazine.jpg"></a></div>
+
+                            <div class="grid-item">
+                                </div>
+
+                        <div class="grid-item ux graphicdesign">
+                            <a href="#">
+                            <div class="galtext">
+                            <h2>Photography</h2>
+                            <h3>My Passion Projects :)</h3>
+                            </div>
+                            <img src="images/thumbnail-photography.jpg"></a></div>
+
+                            <div class="grid-item">
+                            </div>
+                        
+        </div>
+
+    </div> 
+   <!-- closing gallery -->
+
+
+
+
+
+
+   <!-- mobile gallery -->
+
+   <div class="selectedworks-mobile"><h2><span style="font-style: italic">Selected</span> Works</h2> </div>
+
+<div class="selectedworks1"></div>
+
+<div class="selectedworkstext">Mindamins</div>
+
+<div class="selectedworks2"></div>
+
+<div class="selectedworkstext">Time to Watch</div>
+
+<div class="selectedworks3"></div>
+
+<div class="selectedworkstext">Together Under the Stars</div>
+
+<div class="viewall-mobile"><h2>View All Work</h2></div>
+
+
+</div>  <!-- Closing Container -->
+
+<div class="footer"><a href="#">Back to the Top  <img id="arrow" src="images/arrow.svg" width="5%"></a> 
+</div>
+
+<!---->
+<!-- ^^^ arrow for the bottom -->
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- isotope -->
+<script>
+    var $grid = $('.grid').isotope({
+        itemSelector: '.grid-item',
+        masonry: {
+    columnWidth: 100
+  }
+    });
+
+    // filter functions
+    var filterFns = {
+        // show if number is greater than 50
+        numberGreaterThan50: function() {
+            var number = $(this).find('.number').text();
+            return parseInt(number, 10) > 50;
+        },
+        // show if name ends with -ium
+        ium: function() {
+            var name = $(this).find('.name').text();
+            return name.match(/ium$/);
+        }
+    };
+    // bind filter button click
+    $('.filters-button-group').on('click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+        // use filterFn if matches value
+        filterValue = filterFns[filterValue] || filterValue;
+        $grid.isotope({
+            filter: filterValue
+        });
+    });
+    // change is-checked class on buttons
+    $('.button-group').each(function(i, buttonGroup) {
+        var $buttonGroup = $(buttonGroup);
+        $buttonGroup.on('click', 'button', function() {
+            $buttonGroup.find('.is-checked').removeClass('is-checked');
+            $(this).addClass('is-checked');
+        });
+    });
+
+</script>
+
+<!-- perstrok -->
+<script> var instance = new Perstrok('#intro').init(); </script>
+<script> var instance = new Perstrok('#intro2').init(); </script>
+
+<!-- wheel -->
+<script>
+window.onscroll = function () {
+    scrollRotate();
+};
+
+function scrollRotate() {
+    let image = document.getElementById("wheel");
+    image.style.transform = "rotate(" + window.pageYOffset/5 + "deg)";
+}
+</script>
+
+
+
+<!-- smooth scroll -->
+
+<script> 
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+
+
+
+
+<!-- cursor -->
+<script>
+    var cursor = {
+    delay: 8,
+    _x: 0,
+    _y: 0,
+    endX: (window.innerWidth / 2),
+    endY: (window.innerHeight / 2),
+    cursorVisible: true,
+    cursorEnlarged: false,
+    $dot: document.querySelector('.cursor-dot'),
+    $outline: document.querySelector('.cursor-dot-outline'),
+    
+    init: function() {
+        // Set up element sizes
+        this.dotSize = this.$dot.offsetWidth;
+        this.outlineSize = this.$outline.offsetWidth;
+        
+        this.setupEventListeners();
+        this.animateDotOutline();
+    },
+    
+//     updateCursor: function(e) {
+//         var self = this;
+        
+//         console.log(e)
+        
+//         // Show the cursor
+//         self.cursorVisible = true;
+//         self.toggleCursorVisibility();
+
+//         // Position the dot
+//         self.endX = e.pageX;
+//         self.endY = e.pageY;
+//         self.$dot.style.top = self.endY + 'px';
+//         self.$dot.style.left = self.endX + 'px';
+//     },
+    
+    setupEventListeners: function() {
+        var self = this;
+        
+        // Anchor hovering
+        document.querySelectorAll('a').forEach(function(el) {
+            el.addEventListener('mouseover', function() {
+                self.cursorEnlarged = true;
+                self.toggleCursorSize();
+            });
+            el.addEventListener('mouseout', function() {
+                self.cursorEnlarged = false;
+                self.toggleCursorSize();
+            });
+        });
+        
+        // Click events
+        document.addEventListener('mousedown', function() {
+            self.cursorEnlarged = true;
+            self.toggleCursorSize();
+        });
+        document.addEventListener('mouseup', function() {
+            self.cursorEnlarged = false;
+            self.toggleCursorSize();
+        });
+  
+  
+        document.addEventListener('mousemove', function(e) {
+            // Show the cursor
+            self.cursorVisible = true;
+            self.toggleCursorVisibility();
+
+            // Position the dot
+            self.endX = e.pageX;
+            self.endY = e.pageY;
+            self.$dot.style.top = self.endY + 'px';
+            self.$dot.style.left = self.endX + 'px';
+        });
+        
+        // Hide/show cursor
+        document.addEventListener('mouseenter', function(e) {
+            self.cursorVisible = true;
+            self.toggleCursorVisibility();
+            self.$dot.style.opacity = 1;
+            self.$outline.style.opacity = 1;
+        });
+        
+        document.addEventListener('mouseleave', function(e) {
+            self.cursorVisible = true;
+            self.toggleCursorVisibility();
+            self.$dot.style.opacity = 0;
+            self.$outline.style.opacity = 0;
+        });
+    },
+    
+    animateDotOutline: function() {
+        var self = this;
+        
+        self._x += (self.endX - self._x) / self.delay;
+        self._y += (self.endY - self._y) / self.delay;
+        self.$outline.style.top = self._y + 'px';
+        self.$outline.style.left = self._x + 'px';
+        
+        requestAnimationFrame(this.animateDotOutline.bind(self));
+    },
+    
+    toggleCursorSize: function() {
+        var self = this;
+        
+        if (self.cursorEnlarged) {
+            self.$dot.style.transform = 'translate(-50%, -50%) scale(0.75)';
+            self.$outline.style.transform = 'translate(-50%, -50%) scale(1.5)';
+        } else {
+            self.$dot.style.transform = 'translate(-50%, -50%) scale(1)';
+            self.$outline.style.transform = 'translate(-50%, -50%) scale(1)';
+        }
+    },
+    
+    toggleCursorVisibility: function() {
+        var self = this;
+        
+        if (self.cursorVisible) {
+            self.$dot.style.opacity = 1;
+            self.$outline.style.opacity = 1;
+        } else {
+            self.$dot.style.opacity = 0;
+            self.$outline.style.opacity = 0;
+        }
+    }
+}
+
+cursor.init();
+</script>
+
+
 </body>
-</html>
+
+</html>      
