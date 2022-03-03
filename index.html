@@ -42,11 +42,12 @@
     <a id="resume" href="#">RESUME</a>
 
     <nav>
+        
         <a id="logo" href="index.html"> <img src="images/logo.svg" alt="my logo">
         </a>
         <a href="#buttongroup">Work</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
     
 
     <!-- mobile nav -->
@@ -60,10 +61,10 @@
 				<a href="#">
 					<li>Work</li>
 				</a>
-				<a href="#">
+				<a href="about.html">
 					<li>About</li>
 				</a>
-				<a href="#">
+				<a href="contact.html">
 					<li>Contact</li>
 				</a>
 				<a href="#">
@@ -91,20 +92,15 @@
     <div id="container">
 
    <header>
-        <div id="intro">Nice to meet you!</div>
-        <div id="intro2">I'm Peter Hoang.</div>
+        <div id="intro">Hello! I'm Peter,</div>
+        <div id="intro2">nice to meet you.</div>
 
-        <div id="intro-tablet">Nice to meet you!</div>
-        <div id="intro2-tablet">I'm Peter Hoang.</div>
+        <div id="intro-static">Hello! I'm Peter,</div>
+        <div id="intro2-static">nice to meet you.</div>
 
-        <div id="intro-mobile">Nice to meet you!</div>
-        <div id="intro2-mobile">I'm Peter Hoang</div>
-    
-
-
-        <div id="wheel"><img src="images/wheel.png"></div>   
+        <div id="wheel"><img src="images/wheel.svg"></div>
+        <div id="wheelarrow"><img src="images/wheelarrow.svg"></div>   
         
-        <div id="wheel-mobile"><img src="images/wheel.png"></div> 
     </header>
     
    
@@ -123,93 +119,115 @@
         </div>
 
         <div class="grid">
+            <div class="grid-sizer"></div>
+            <div class="gutter-sizer"></div>
+
             <div class="grid-item ux">
                 <a href="#">
                 <div class="galtext">
                 <h2>Mindamins</h2>
                 <h3>Daily Quote App</h3>
                 </div>
-                <img src="images/thumbnail-mindamins.jpg"></a></div>
+                <img src="images/thumbnail-mindamins.jpg"></a>
+                <div id="mobilegaltext">Mindamins</div>
+            </div>
 
-                <div class="grid-item ux graphicdesign">
-                    <a href="#">
-                    <div class="galtext">
-                    <h2>Cruisewatch</h2>
-                    <h3>Website Redesign & Rebrand</h3>
-                    </div>
-                    <img src="images/thumbnail-cruisewatch.jpg"></a></div>
+            <div class="grid-item ux graphicdesign">
+                <a href="#">
+                <div class="galtext">
+                <h2>Cruisewatch</h2>
+                <h3>Website Redesign & Rebrand</h3>
+                </div>
+                <img src="images/thumbnail-cruisewatch.jpg"></a>
+                <div id="mobilegaltext">Cruisewatch</div>
+            </div>
 
-                    <div class="grid-item ux code artdirection">
-                        <a href="#">
-                        <div class="galtext">
-                        <h2>Time to Watch</h2>
-                        <h3>Website Design</h3>
-                        </div>
-                        <img src="images/thumbnail-timetowatch.jpg"></a></div>
+            <div class="grid-item ux code artdirection">
+                <a href="#">
+                <div class="galtext">
+                <h2>Time to Watch</h2>
+                <h3>Website Design</h3>
+                </div>
+                <img src="images/thumbnail-timetowatch.jpg"></a>
+                <div id="mobilegaltext">Time to Watch</div>
+            </div>
                         
-                    <div class="grid-item advertising graphicdesign artdirection photography">
-                        <a href="#">
-                        <div class="galtext herefortheholidays">
-                        <h2>#herefortheholidays</h2>
-                        <h3>Ad Campaign</h3>
-                        </div>
-                        <img src="images/thumbnail-herefortheholidays.jpg"></a></div>
+            <div class="grid-item advertising graphicdesign artdirection photography">
+                <a href="#">
+                <div class="galtext herefortheholidays">
+                <h2>#herefortheholidays</h2>
+                <h3>Ad Campaign</h3>
+                </div>
+                <img src="images/thumbnail-herefortheholidays.jpg"></a>
+                <div id="mobilegaltext">#herefortheholidays</div>
+            </div>
                         
-                    <div class="grid-item ux graphicdesign photography">
-                        <a href="#">
-                        <div class="galtext">
-                        <h2>Pho Viet Royal</h2>
-                        <h3>Website Redesign & Rebrand</h3>
-                        </div>
-                        <img src="images/thumbnail-pho.jpg"></a></div>
+            <div class="grid-item ux graphicdesign photography">
+                <a href="#">
+                <div class="galtext">
+                <h2>Pho Viet Royal</h2>
+                <h3>Website Redesign & Rebrand</h3>
+                </div>
+                <img src="images/thumbnail-pho.jpg"></a>
+                <div id="mobilegaltext">Pho Viet Royal</div>
+            </div>
                         
-                    <div class="grid-item artdirection graphicdesign">
-                        <a href="#">
-                        <div class="galtext kem">
-                        <h2>KEM Ice Cream Lounge</h2>
-                        <h3>Branding & Brand Invention</h3>
-                        </div>
-                        <img src="images/thumbnail-kem.jpg"></a></div>
+            <div class="grid-item artdirection graphicdesign">
+                <a href="#">
+                <div class="galtext kem">
+                <h2>KEM Ice Cream Lounge</h2>
+                <h3>Branding & Brand Invention</h3>
+                </div>
+                <img src="images/thumbnail-kem.jpg"></a>
+                <div id="mobilegaltext">KEM Ice Cream Lounge</div>
+            </div>
                         
-                    <div class="grid-item advertising artdirection">
-                        <a href="#">
-                        <div class="galtext f91w">
-                        <h2>F-91w: Smarten Down</h2>
-                        <h3>Ad Campaign</h3>
-                        </div>
-                        <img src="images/thumbnail-f91w.jpg"></a></div>
+            <div class="grid-item advertising artdirection">
+                <a href="#">
+                <div class="galtext f91w">
+                <h2>F-91w: Smarten Down</h2>
+                <h3>Ad Campaign</h3>
+                </div>
+                <img src="images/thumbnail-f91w.jpg"></a>
+                <div id="mobilegaltext">F91w: Smarten Down</div>
+            </div>
                         
-                    <div class="grid-item artdirection graphicdesign">
-                        <a href="#">
-                        <div class="galtext together">
-                        <h2>Together Under the Stars</h2>
-                        <h3>Album Design</h3>
-                        </div>
-                        <img src="images/thumbnail-together.jpg"></a></div>
+            <div class="grid-item artdirection graphicdesign">
+                <a href="#">
+                <div class="galtext together">
+                <h2>Together Under the Stars</h2>
+                <h3>Album Design</h3>
+                </div>
+                <img src="images/thumbnail-together.jpg"></a>
+                <div id="mobilegaltext">Together Under the Stars</div>
+            </div>
                 
 
-                        <div class="grid-item artdirection graphicdesign">
-                            <a href="#">
-                            <div class="galtext">
-                            <h2>5 Second Rule</h2>
-                            <h3>Editorial Design</h3>
-                            </div>
-                            <img src="images/thumbnail-magazine.jpg"></a></div>
+            <div class="grid-item artdirection graphicdesign">
+                <a href="#">
+                <div class="galtext">
+                <h2>5 Second Rule</h2>
+                <h3>Editorial Design</h3>
+                </div>
+                <img src="images/thumbnail-magazine.jpg"></a>
+                <div id="mobilegaltext">5 Second Rule</div>
+            </div>
 
-                            <div class="grid-item">
-                                </div>
+            <div class="grid-item"></div> 
+            <!-- BLANK ^ -->
 
-                        <div class="grid-item ux graphicdesign">
-                            <a href="#">
-                            <div class="galtext">
-                            <h2>Photography</h2>
-                            <h3>My Passion Projects :)</h3>
-                            </div>
-                            <img src="images/thumbnail-photography.jpg"></a></div>
+            <div class="grid-item ux graphicdesign">
+                <a href="#">
+                <div class="galtext">
+                <h2>Photography</h2>
+                <h3>My Passion Projects :)</h3>
+                </div>
+                <img src="images/thumbnail-photography.jpg"></a>
+                <div id="mobilegaltext">Photography</div>
+            </div>
 
-                            <div class="grid-item">
-                            </div>
-                        
+            <div class="grid-item blank"></div>
+            <!-- BLANK ^ -->                        
         </div>
 
     </div> 
@@ -220,32 +238,12 @@
 
 
 
-   <!-- mobile gallery -->
-
-   <div class="selectedworks-mobile"><h2><span style="font-style: italic">Selected</span> Works</h2> </div>
-
-<div class="selectedworks1"></div>
-
-<div class="selectedworkstext">Mindamins</div>
-
-<div class="selectedworks2"></div>
-
-<div class="selectedworkstext">Time to Watch</div>
-
-<div class="selectedworks3"></div>
-
-<div class="selectedworkstext">Together Under the Stars</div>
-
-<div class="viewall-mobile"><h2>View All Work</h2></div>
-
-
+ 
 </div>  <!-- Closing Container -->
 
 <div class="footer"><a href="#">Back to the Top  <img id="arrow" src="images/arrow.svg" width="5%"></a> 
 </div>
 
-<!---->
-<!-- ^^^ arrow for the bottom -->
 
 
 
@@ -273,17 +271,18 @@
 
 
 
-
+<!-------------------------------------------------------------------- JAVA SCRIPT -------------------------------------------------------------------->
 
 <!-- isotope -->
 <script>
-    var $grid = $('.grid').isotope({
-        itemSelector: '.grid-item',
-        masonry: {
-    columnWidth: 100
+var $grid = $('.grid').isotope({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  masonry: {
+    columnWidth: '.grid-sizer',
+    gutter: '.gutter-sizer'
   }
-    });
-
+});
     // filter functions
     var filterFns = {
         // show if number is greater than 50
@@ -332,32 +331,6 @@ function scrollRotate() {
     image.style.transform = "rotate(" + window.pageYOffset/5 + "deg)";
 }
 </script>
-
-
-
-<!-- smooth scroll -->
-
-<script> 
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-</script>
-
-
-
-
 
 <!-- cursor -->
 <script>

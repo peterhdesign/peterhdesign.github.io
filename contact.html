@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Work!</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+        
+	
+	<link href="style.css" rel="stylesheet" type="text/css" />	
+	<meta name="viewport" content="width=device-width">
+</head>
+ 
+</head>
+
+<body>
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+
+
+    <a id="instagram" href="#"> <img src="images/instagram.svg"></a>
+    <a id="email" href="#"> <img src="images/email.svg"></a>
+    <a id="resume" href="#">RESUME</a>
+
+    <nav>
+        
+        <a id="logo" href="index.html"> <img src="images/logo.svg" alt="my logo">
+        </a>
+        <a href="#buttongroup">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    
+
+    <!-- mobile nav -->
+    <div id= "mobilenav">
+		<div id="menuToggle">
+			<input type="checkbox" />
+			<span></span>
+			<span class="navtitle">MENU</span>
+			<span></span>
+			<ul id="menu">
+				<a href="index.html">
+					<li>Work</li>
+				</a>
+				<a href="about.html">
+					<li>About</li>
+				</a>
+				<a href="contact.html">
+					<li>Contact</li>
+				</a>
+				<a href="#">
+					<li>Resume</li>
+				</a>
+			</ul>
+		</div>
+	</div>
+
+</nav>
+
+<div id="container">
+
+
+<div id="contact-page">
+
+    <h1>Let's Connect.</h1>
+    <p>Feel free to send me an e-mail :)</p>
+    <a href="mailto:peter@peterhuy.org"><h2>peter@peterhuy.org</h2></a>
+    <div class="contact-social">
+        <a href><h3>Instagram</h3></a>
+        <a href><h3>LinkedIn</h3></a>
+    </div>
+
+
+
+</div>
+
+</div>  <!-- Closing Container -->
+
+<div class="footer"><a href="#"> Back to the Top  <img id="arrow" src="images/arrow.svg" width="5%"></a> 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- cursor -->
+<script>
+  var cursor = {
+  delay: 8,
+  _x: 0,
+  _y: 0,
+  endX: (window.innerWidth / 2),
+  endY: (window.innerHeight / 2),
+  cursorVisible: true,
+  cursorEnlarged: false,
+  $dot: document.querySelector('.cursor-dot'),
+  $outline: document.querySelector('.cursor-dot-outline'),
+  
+  init: function() {
+      // Set up element sizes
+      this.dotSize = this.$dot.offsetWidth;
+      this.outlineSize = this.$outline.offsetWidth;
+      
+      this.setupEventListeners();
+      this.animateDotOutline();
+  },
+  
+//     updateCursor: function(e) {
+//         var self = this;
+      
+//         console.log(e)
+      
+//         // Show the cursor
+//         self.cursorVisible = true;
+//         self.toggleCursorVisibility();
+
+//         // Position the dot
+//         self.endX = e.pageX;
+//         self.endY = e.pageY;
+//         self.$dot.style.top = self.endY + 'px';
+//         self.$dot.style.left = self.endX + 'px';
+//     },
+  
+  setupEventListeners: function() {
+      var self = this;
+      
+      // Anchor hovering
+      document.querySelectorAll('a').forEach(function(el) {
+          el.addEventListener('mouseover', function() {
+              self.cursorEnlarged = true;
+              self.toggleCursorSize();
+          });
+          el.addEventListener('mouseout', function() {
+              self.cursorEnlarged = false;
+              self.toggleCursorSize();
+          });
+      });
+      
+      // Click events
+      document.addEventListener('mousedown', function() {
+          self.cursorEnlarged = true;
+          self.toggleCursorSize();
+      });
+      document.addEventListener('mouseup', function() {
+          self.cursorEnlarged = false;
+          self.toggleCursorSize();
+      });
+
+
+      document.addEventListener('mousemove', function(e) {
+          // Show the cursor
+          self.cursorVisible = true;
+          self.toggleCursorVisibility();
+
+          // Position the dot
+          self.endX = e.pageX;
+          self.endY = e.pageY;
+          self.$dot.style.top = self.endY + 'px';
+          self.$dot.style.left = self.endX + 'px';
+      });
+      
+      // Hide/show cursor
+      document.addEventListener('mouseenter', function(e) {
+          self.cursorVisible = true;
+          self.toggleCursorVisibility();
+          self.$dot.style.opacity = 1;
+          self.$outline.style.opacity = 1;
+      });
+      
+      document.addEventListener('mouseleave', function(e) {
+          self.cursorVisible = true;
+          self.toggleCursorVisibility();
+          self.$dot.style.opacity = 0;
+          self.$outline.style.opacity = 0;
+      });
+  },
+  
+  animateDotOutline: function() {
+      var self = this;
+      
+      self._x += (self.endX - self._x) / self.delay;
+      self._y += (self.endY - self._y) / self.delay;
+      self.$outline.style.top = self._y + 'px';
+      self.$outline.style.left = self._x + 'px';
+      
+      requestAnimationFrame(this.animateDotOutline.bind(self));
+  },
+  
+  toggleCursorSize: function() {
+      var self = this;
+      
+      if (self.cursorEnlarged) {
+          self.$dot.style.transform = 'translate(-50%, -50%) scale(0.75)';
+          self.$outline.style.transform = 'translate(-50%, -50%) scale(1.5)';
+      } else {
+          self.$dot.style.transform = 'translate(-50%, -50%) scale(1)';
+          self.$outline.style.transform = 'translate(-50%, -50%) scale(1)';
+      }
+  },
+  
+  toggleCursorVisibility: function() {
+      var self = this;
+      
+      if (self.cursorVisible) {
+          self.$dot.style.opacity = 1;
+          self.$outline.style.opacity = 1;
+      } else {
+          self.$dot.style.opacity = 0;
+          self.$outline.style.opacity = 0;
+      }
+  }
+}
+
+cursor.init();
+</script>
+</body>
+
+</html>      
