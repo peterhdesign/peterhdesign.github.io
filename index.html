@@ -1,51 +1,43 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-    <title>Peter Hoang</title>
+    <head>
+        <title>Peter Hoang</title>
+        
+        <!-- perstrok.js -->
+        <script src="https://cdn.jsdelivr.net/perstrok.js/1.0.1/perstrok.min.js"></script>
+       
+        <!-- isotope -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     
-    <!-- perstrok.js -->
-    <script src="https://cdn.jsdelivr.net/perstrok.js/1.0.1/perstrok.min.js"></script>
-   
-    <!-- isotope -->
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
-    <!-- Spinning Wheel -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
-     
-    <!-- link to your CSS files here -->
-    <!-- maybe link to your js here, maybe at the end of body --> 
-	
-	<link href="style.css" rel="stylesheet" type="text/css" />	
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
-	
-<meta name="viewport" content="width=device-width">
-
-
-
-
-</head>
+        <!-- Spinning Wheel -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+         
+        <!-- link to your CSS files here -->
+        <!-- maybe link to your js here, maybe at the end of body --> 
+        
+        <link href="style.css" rel="stylesheet" type="text/css">	
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&amp;display=swap" rel="stylesheet">
+        
+    <meta name="viewport" content="width=device-width">
 
 <body>
     <div class="cursor-dot-outline"></div>
     <div class="cursor-dot"></div>
 
 
-    <a id="instagram" href="#"> <img src="images/instagram.svg"></a>
-    <a id="email" href="#"> <img src="images/email.svg"></a>
-    <a id="resume" href="#">RESUME</a>
+    <a id="instagram" href="https://www.instagram.com/peterhuy_/" target="_blank"> <img src="images/instagram.svg"></a>
+    <a id="email" href="mailto:peter@peterhuy.org"> <img src="images/email.svg"></a>
+    <a id="resume" href="/PeterHoang_Resume.pdf" target="_blank">RESUME</a>
 
     <nav>
         
         <a id="logo" href="index.html"> <img src="images/logo.svg" alt="my logo">
         </a>
-        <a href="#buttongroup">Work</a>
+        <a href="index.html#intro2">Work</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
     
@@ -58,7 +50,7 @@
 			<span class="navtitle">MENU</span>
 			<span></span>
 			<ul id="menu">
-				<a href="#">
+				<a href="index.html#buttongroup">
 					<li>Work</li>
 				</a>
 				<a href="about.html">
@@ -67,7 +59,7 @@
 				<a href="contact.html">
 					<li>Contact</li>
 				</a>
-				<a href="#">
+				<a href="/PeterHoang_Resume.pdf" target="_blank">
 					<li>Resume</li>
 				</a>
 			</ul>
@@ -75,6 +67,8 @@
 	</div>
 
 </nav>
+
+
 
 
 
@@ -111,7 +105,6 @@
         <div id="buttongroup" class="button-group filters-button-group">
             <button class="button is-checked" data-filter="*">show all</button>
             <button class="button" data-filter=".ux">UX</button>
-            <button class="button" data-filter=".artdirection">Art Direction</button>
             <button class="button" data-filter=".advertising">Advertising</button>
             <button class="button" data-filter=".graphicdesign">Graphic Design</button>
             <button class="button" data-filter=".photography">Photography</button>
@@ -123,7 +116,7 @@
             <div class="gutter-sizer"></div>
 
             <div class="grid-item ux">
-                <a href="work.html">
+                <a href="mindamins.html">
                 <div class="galtext">
                 <h2>Mindamins</h2>
                 <h3>Daily Quote App</h3>
@@ -132,8 +125,8 @@
                 <div id="mobilegaltext">Mindamins</div>
             </div>
 
-            <div class="grid-item ux graphicdesign">
-                <a href="#">
+            <div class="grid-item ux branding">
+                <a href="cruisewatch.html">
                 <div class="galtext">
                 <h2>Cruisewatch</h2>
                 <h3>Website Redesign & Rebrand</h3>
@@ -142,8 +135,8 @@
                 <div id="mobilegaltext">Cruisewatch</div>
             </div>
 
-            <div class="grid-item ux code artdirection">
-                <a href="#">
+            <div class="grid-item ux code">
+                <a href="timetowatch.html">
                 <div class="galtext">
                 <h2>Time to Watch</h2>
                 <h3>Website Design</h3>
@@ -152,8 +145,8 @@
                 <div id="mobilegaltext">Time to Watch</div>
             </div>
                         
-            <div class="grid-item advertising graphicdesign artdirection photography">
-                <a href="#">
+            <div class="grid-item advertising photography">
+                <a href="herefortheholidays.html">
                 <div class="galtext herefortheholidays">
                 <h2>#herefortheholidays</h2>
                 <h3>Ad Campaign</h3>
@@ -162,8 +155,8 @@
                 <div id="mobilegaltext">#herefortheholidays</div>
             </div>
                         
-            <div class="grid-item ux graphicdesign photography">
-                <a href="#">
+            <div class="grid-item ux branding photography code">
+                <a href="phovietroyal.html">
                 <div class="galtext">
                 <h2>Pho Viet Royal</h2>
                 <h3>Website Redesign & Rebrand</h3>
@@ -172,18 +165,18 @@
                 <div id="mobilegaltext">Pho Viet Royal</div>
             </div>
                         
-            <div class="grid-item artdirection graphicdesign">
-                <a href="#">
+            <!-- <div class="grid-item branding graphicdesign">
+                <a href="kemicecreamlounge.html">
                 <div class="galtext kem">
                 <h2>KEM Ice Cream Lounge</h2>
                 <h3>Branding & Brand Invention</h3>
                 </div>
                 <img src="images/thumbnail-kem.jpg"></a>
                 <div id="mobilegaltext">KEM Ice Cream Lounge</div>
-            </div>
+            </div> -->
                         
-            <div class="grid-item advertising artdirection">
-                <a href="#">
+            <div class="grid-item advertising photography graphicdesign">
+                <a href="f91w.html">
                 <div class="galtext f91w">
                 <h2>F-91w: Smarten Down</h2>
                 <h3>Ad Campaign</h3>
@@ -192,8 +185,8 @@
                 <div id="mobilegaltext">F91w: Smarten Down</div>
             </div>
                         
-            <div class="grid-item artdirection graphicdesign">
-                <a href="#">
+            <div class="grid-item graphicdesign">
+                <a href="togetherunderthestars.html">
                 <div class="galtext together">
                 <h2>Together Under the Stars</h2>
                 <h3>Album Design</h3>
@@ -203,8 +196,8 @@
             </div>
                 
 
-            <div class="grid-item artdirection graphicdesign">
-                <a href="#">
+            <div class="grid-item graphicdesign">
+                <a href="5secondrule.html">
                 <div class="galtext">
                 <h2>5 Second Rule</h2>
                 <h3>Editorial Design</h3>
@@ -213,21 +206,18 @@
                 <div id="mobilegaltext">5 Second Rule</div>
             </div>
 
-            <div class="grid-item"></div> 
-            <!-- BLANK ^ -->
-
-            <div class="grid-item ux graphicdesign">
-                <a href="#">
+          
+            <div class="grid-item photography">
+                <a href="lifesnapshots.html">
                 <div class="galtext">
-                <h2>Photography</h2>
-                <h3>My Passion Projects :)</h3>
+                <h2>Life Snapshots</h2>
+                <h3>A Photo journal</h3>
                 </div>
                 <img src="images/thumbnail-photography.jpg"></a>
-                <div id="mobilegaltext">Photography</div>
+                <div id="mobilegaltext">Life Snapshots</div>
             </div>
 
-            <div class="grid-item blank"></div>
-            <!-- BLANK ^ -->                        
+                             
         </div>
 
     </div> 

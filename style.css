@@ -615,11 +615,29 @@ position: relative;
 	background-color: #000;
 }
 
-
-
-
+.main-carousel{width: 80%;
+margin: auto;}
+.flickity-button {
+	background-color:#fff;
+  }
+  /* big previous & next buttons */
+  .flickity-prev-next-button {
+	top: -15vw;
+	width: 5vw;
+	height: 5vw;
+  }
+  /* icon color */
+  .flickity-button-icon {
+	fill: #000;
+  }
+ 
+ .flickity-prev-next-button.previous{
+	  left: -20vw;
+  }
+  .flickity-prev-next-button.next{
+	right: -20vw;
+}
 .detail-facts-mobile{display: none;}
-
 
 
 
@@ -744,6 +762,30 @@ border: 1px solid #000;}
 
 
 
+.websitebutton h2{font: 600 2.5vw 'Playfair Display', serif;
+	font-style: italic;
+	background-color: #000;
+	width: 40%;
+	margin: auto;
+	border-radius: 80px;
+	
+	text-align: center;
+	border: 1px solid #000;
+	transition: .3s ease;}
+
+	.websitebutton a{
+	text-decoration: none;
+	color: #fff;}
+
+	.websitebutton a:hover{
+	color: #000;}
+	
+	.websitebutton h2:hover{
+	background-color: transparent;
+border: 1px solid #000;}
+
+
+
 
 /* TO STYLIZE RESPONSIVE HEADER */
 @media screen and (max-width: 1650px) {
@@ -827,7 +869,7 @@ border: 1px solid #000;}
 	}
 
 	#contact-page{
-		padding-top: 20vw;
+		padding-top: 40vw;
 	}
 
 
@@ -858,11 +900,7 @@ border: 1px solid #000;}
 
 
 
-
-
-
-
-
+		
 
 
 
@@ -891,11 +929,20 @@ border: 1px solid #000;}
 
 	#wheel{left: 42vw;
 	top: 55vw;}
-
-	#wheelarrow{left: 51vw;
-		top: 59vw;}
+	#wheel {
+		position: absolute;   
+		top: 55vw;
+		left: 33vw;  
+		transition: .3s ease;
+	}
 	
-	#gallery{padding-top: 30vw;}
+	#wheel img{width: 30vw;}
+
+	#wheelarrow{left: 46.5vw;
+		top: 60vw;}
+		#wheelarrow img{width: 4vw;}
+	
+	#gallery{padding-top: 40vw;}
 
 	/* grid */
 
@@ -914,6 +961,11 @@ border: 1px solid #000;}
   .grid-item {
 	margin-bottom: 15%;
   }
+
+  .galtext{display: none;}
+  #gallery .grid-item a:hover .galtext{
+	display: none;
+}
 
 #arrow{display: none;}
 	
@@ -1106,7 +1158,13 @@ header{margin: auto;}
 	direction:ltr;
 	}
 
-
+.main-carousel{width: 100%;}
+	.flickity-prev-next-button.previous{
+		left: -40vw;
+	}
+	.flickity-prev-next-button.next{
+	  right: -40vw;
+  }
 /* 
 	.detail-facts-mobile{display: flex;
 		width: 80%;	
@@ -1177,7 +1235,7 @@ header{margin: auto;}
   }
 
 #mobilegaltext{
-display: block;	
+display: none;	
 width: 100%;
 text-align: right;
 margin: auto;
