@@ -273,6 +273,12 @@ var $grid = $('.grid').isotope({
     gutter: '.gutter-sizer'
   }
 });
+
+// layout Isotope after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.isotope('layout');
+});
+
     // filter functions
     var filterFns = {
         // show if number is greater than 50
