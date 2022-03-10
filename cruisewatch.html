@@ -3,6 +3,15 @@
 <head>
     <title>Cruisewatch Website Redesign and Rebrand</title>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+<link rel="mask-icon" href="favicon_io/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
@@ -15,13 +24,14 @@
 
 <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
 <script src="/path/to/flickity.pkgd.min.js"></script>
-
+<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+   
+    
 
 
 	<link href="style.css" rel="stylesheet" type="text/css" />	
@@ -122,10 +132,19 @@
 
 
 <div class="main-carousel">
-  <div class="carousel-cell"><img src="images/Cruisewatch/cruisewatch-thumbnail.jpg"></div>
-  <div class="carousel-cell"><img src="images/Cruisewatch/cruisewatch-logo.jpg"></div>
- 
+  <div class="carousel-cell"><img src="images/Cruisewatch/process-brandsheet.jpg"><p>Branding Sheet<p></h1></div>
+  <div class="carousel-cell"><img src="images/Cruisewatch/process-flow.jpg"><p>Process Flow</p></div>
+  <div class="carousel-cell"><img src="images/Cruisewatch/process-qna.jpg"><p>Reseach Interviews</p></div>
+  <div class="carousel-cell"><img src="images/Cruisewatch/process-homepage-wireframe1.jpg"><p>Homepage Wireframe Ver 1 (Desktop)</p></div>
+  <div class="carousel-cell"><img src="images/Cruisewatch/process-homepage-wireframe2.jpg"><p>Homepage Wireframe Ver 2 (Desktop)</p></div>
+  <div class="carousel-cell"><img src="images/Cruisewatch/process-homepage-wireframe1-mobile.jpg"><p>Homepage Wireframe Ver 1 (Mobile)</p></div>
+  <div class="carousel-cell"><img src="images/Cruisewatch/process-homepage-wireframe2-mobile.jpg"><p>Homepage Wireframe Ver 2 (Mobile)</p></div>
+  <div class="carousel-cell"><img src="images/Cruisewatch/process-cardsorting2.jpg"><p>Cardsorting Activity (1/3)</p></div>
+  <div class="carousel-cell"><img src="images/Cruisewatch/process-cardsorting2.jpg"><p>Cardsorting Activity (2/3)</p></div>
+  <div class="carousel-cell"><img src="images/Cruisewatch/process-cardsorting3.jpg"><p>Cardsorting Activity (3/3)</p></div>
 </div>
+
+
 
 
 
@@ -143,14 +162,12 @@
   <div class="previous">
 
      <div class="previous-thumbnail"><img src="images/thumbnail-magazine.jpg"></div>
-      <!-- <a href="#"><i class="fa-solid fa-arrow-left-long"></i></a> -->
       <a href="5secondrule.html"><div class="previous-arrow"></div></a>
 
     </div>
 
   <div class="next">
     <div class="next-thumbnail"><img src="images/thumbnail-f91w.jpg"></div>  
-    <!-- <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a> -->
     <a href="f91w.html"><div class="next-arrow"></div></a>
     
 </div>
@@ -191,8 +208,7 @@
 
 
 
-
-
+<!-- Flickity -->
 <script>
   $('.main-carousel').flickity({
       // options
@@ -201,7 +217,6 @@
       imagesLoaded: true
   });
 </script>
-
 
 
 <!-- cursor -->
@@ -354,11 +369,6 @@ $( ".next-arrow" ).mouseenter(function() {
 $( ".next-arrow" ).mouseout(function() {
   $(".next-thumbnail img").css("opacity","0");
 });
-
-
-
-//fa-arrow-right-long
-
 
 
 </script>

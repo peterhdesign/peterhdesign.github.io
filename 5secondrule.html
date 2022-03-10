@@ -3,6 +3,14 @@
 <head>
     <title>The 5 Second Rule</title>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+<link rel="mask-icon" href="favicon_io/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
@@ -11,13 +19,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/62e90da84f.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
-
-    
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+    <script src="/path/to/flickity.pkgd.min.js"></script>
     <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 	<link href="style.css" rel="stylesheet" type="text/css" />	
 	<meta name="viewport" content="width=device-width">
@@ -110,7 +120,21 @@
 
 <img src="images/5secondrule/opening-spread.jpg" width="100%">
 <img src="images/5secondrule/inner-spreads.jpg" width="100%">
-<img src="images/5secondrule/inside_spread_process_gif.gif" width="100%">
+
+
+
+
+<div class="main-carousel">
+  <div class="carousel-cell"><img src="images/5secondrule/inside_spread_process_gif.gif"><p>Text Spreads Process<p></div>
+    <div class="carousel-cell"><img src="images/5secondrule/outside_spread_process_gif.gif"><p>Cover Spreads Process<p></div>
+
+</div>
+
+
+
+
+
+
 </div> <!-- Closing scrolling -->
 
 </div> <!-- Detail Page -->
@@ -167,6 +191,15 @@
 
 
 
+<!-- Flickity -->
+<script>
+  $('.main-carousel').flickity({
+      // options
+      cellAlign: 'left',
+      wrapAround: true,
+      imagesLoaded: true
+  });
+</script>
 
 
 
