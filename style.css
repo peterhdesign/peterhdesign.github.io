@@ -652,9 +652,10 @@ position: relative;
 /* ------------------------------------------------CONTACT------------------------------------------------ */
 
 #contact-page{width: 100%;
-height: 100vh;
+height: auto;
 margin: auto;
-padding-top:13vw;}
+padding-top:10vw;
+padding-bottom: 20vw;}
 
 #contact-page h1{
 	font: 600 5vw 'Montserrat', sans-serif;
@@ -715,8 +716,9 @@ border: 1px solid #000;}
 
 /* ------------------------------------------------ABOUT------------------------------------------------ */
 #about-page{width: 100%;
-height: 100vh;
-padding-top: 20vw;}
+height: auto;
+padding-top: 10vw;
+padding-bottom: 20%;}
 
 #about-container{
 	width: 80%;
@@ -727,6 +729,7 @@ padding-top: 20vw;}
 }
 
 .filler{width: 80%;
+	margin-top: 2vw;
 height: 400px;
 background-color: blue;
 margin-right: 10vw;}
@@ -792,7 +795,12 @@ border: 1px solid #000;}
 	background-color: transparent;
 border: 1px solid #000;}
 
-
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
 
 /* TO STYLIZE RESPONSIVE HEADER */
@@ -839,10 +847,13 @@ border: 1px solid #000;}
 
 	.button{font: 600 14px 'Montserrat', sans-serif;}
 
-	
 
-
-
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
 /* tablet size AND SMALLER stuff here */
 @media screen and (max-width: 1040px) {
@@ -881,53 +892,65 @@ border: 1px solid #000;}
 		height:2.3vw;
 	}
 
-	#contact-page{
-		padding-top: 40vw;
+	#arrow{display: block;
+		position: absolute;
+		width: 4.5vw;
+		right: 13vw;
+		margin-top: -4.5vw;
+	}
+	
+		
+	.footer{
+		height: 3vw;
+		margin-top: none;
+	}
+	
+
+	.footer a{
+		font-size: 1.5vw;
+		margin-left: 60vw;
 	}
 
 
+/* ------------------------------------ABOUT-Tablet------------------------------------ */
 
-	#about-page{width: 100%;
+	#about-page{
+		width: 100%;
 		height: 100vh;
 		padding-top: 20vw;}
 		
-		#about-container{
-			width: 80%;
-			height: auto;
-			margin: auto;
-			display: flex;
-			justify-content: space-around;
+	#about-container{
+		width: 80%;
+		height: auto;
+		margin: auto;
+		display: flex;
+		justify-content: space-around;
 		}
 		
-		.filler{width: 80%;
+	.filler{
+		width: 80%;
 		height: 400px;
 		background-color: blue;
-		margin-right: 3vw;}
+		margin-right: 3vw;
+	}
 		
-		
-		
-		.about-text p{
-			font: 400 16px 'roboto', sans-serif;
-			padding-bottom: 10px;
-		}
+	.about-text p{
+		font: 400 16px 'roboto', sans-serif;
+		padding-bottom: 10px;
+	}
 
-		#arrow{display: block;
-			position: absolute;
-			width: 4.5vw;
-			right: 13vw;
-			margin-top: -4.5vw;}
-		
-		
-			.footer{
-				height: 3vw;
-				margin-top: none;
-				}
-		
+	/* ------------------------------------CONTACT-Tablet------------------------------------ */
+	#contact-page{
+		padding-top: 20vw;
+		height: 100vh;
+	}
 
-			.footer a{font-size: 1.5vw;
-			margin-left: 60vw;}
-
-
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
 /* for smaller tablets */
 @media screen and (max-width: 766px) {
@@ -945,9 +968,6 @@ border: 1px solid #000;}
 		text-align: center;
 		padding-top: 0%;
 	}
-
-
-
 
 	#wheel {
 		position: absolute;   
@@ -1053,13 +1073,11 @@ nav a{display: none;}
 }
 
 #menuToggle .navtitle {
-	
 	background-color: #fff;
 	text-align: center;
 	font: 600 18px 'Montserrat', sans-serif;
 	letter-spacing: 3px;
 	right: 100%;
-
 	color: #000;
 
 }
@@ -1089,7 +1107,7 @@ nav a{display: none;}
 	transform: rotate(-45deg) translate(0, -1px);
 }
 
-#menu {
+#menu{
 	position: absolute;
 	width: 300px;
 	height: 100vh;
@@ -1133,6 +1151,8 @@ header{margin: auto;}
 
 }
 
+/* ------------------------------------ABOUT-SmallTablet------------------------------------ */
+
 
 #about-page{width: 100%;
 	height: auto;
@@ -1150,7 +1170,16 @@ header{margin: auto;}
 	.filler{margin: auto;}
 	
 
+/* ------------------------------------CONTACT-SmallTablet------------------------------------ */
 
+
+#contact-page{
+	padding-top: 30vw;
+	padding-bottom: 90vh;
+	height: auto;
+}
+
+/* ------------------------------------DETAIL PAGES-SmallTablet------------------------------------ */
 
 
 	
@@ -1189,6 +1218,15 @@ header{margin: auto;}
 	.flickity-prev-next-button.next{
 	  right: -40vw;
   }
+
+
+
+
+
+
+
+
+
 
 
   
