@@ -489,7 +489,7 @@ h1.mindamins {padding: 5%;}
 	height: auto;
 }
 
-.scrolling{width: 65%;
+.scrolling{width: 60%;
 	position: relative;
 	text-align: center;
 	margin: auto;
@@ -497,11 +497,18 @@ h1.mindamins {padding: 5%;}
 }
 
 .scrolling img{
-	
 	margin: auto;
 	width: 100%;
 	text-align: center;
-	padding-top: 3%;}
+	
+}
+
+.projectpics{	
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  margin-top: 3%;
+}
+.spotify{margin-top: 3%;}
 
 .detail-facts{
 	display: flex;
@@ -556,17 +563,18 @@ h1.mindamins {padding: 5%;}
 	
   }
   
-  .blurb::-webkit-scrollbar {
+.blurb::-webkit-scrollbar {
 	width: 6px;
   }
   
-  .blurb::-webkit-scrollbar-thumb {
+.blurb::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #000;
 	border: 1px solid #000;
   }
 
+  /* PROJECT BUTTONS */
 #project-buttons{
 	display: flex;
 	flex-direction: row;
@@ -578,7 +586,7 @@ h1.mindamins {padding: 5%;}
 .previous, .next{
 	width: 45%;
 	height: 500px;
-position: relative;
+	position: relative;
 }
 
 .next-thumbnail img,.previous-thumbnail img{
@@ -615,47 +623,60 @@ position: relative;
 }
 
 /*---------------------------------Flickity--------------------------------- */
-.main-carousel{width: 80%;
+.main-carousel{width: 95%;
 	margin: auto;
 	padding: none;}
+
 .flickity-button {
 	background-color:transparent;
 	border: solid 2px #000;
 	border-radius: 0%;
-	transition: all .5s ease;
-  }
+	transition: all .5s ease;}
   
   /* big previous & next buttons */
   .flickity-prev-next-button {
-	top: -15vw;
+	top: -20vw;
 	width: 4vw;
-	height: 4vw;
-  }
+	height: 4vw;}
+
   /* icon color */
   .flickity-button-icon {
-	fill: #000;
-  }
+	fill: #000;}
  
- .flickity-prev-next-button.previous{
-	  left: -20vw;
-  }
-  .flickity-prev-next-button.next{
-	right: -20vw;
-}
+.flickity-button.flickity-prev-next-button.next{
+	right: -25vw;
+	cursor: none;}
+
+.flickity-button.flickity-prev-next-button.previous{
+	left: -25vw;
+	cursor: none;}
+
+.flickity-page-dots{bottom: 5%;}
+.flickity-page-dots .dot{cursor: none;}
+
 .detail-facts-mobile{display: none;}
 
 .carousel-cell p{
 	font: italic 600 18px 'Playfair Display', serif;}
+
+.zoom {
+	display:inline-block;
+	position: relative;}
+
+.zoom img {
+	display: block;}
+
+.zoom img::selection {
+	background-color: transparent;}
 
 
 
 /* ------------------------------------------------CONTACT------------------------------------------------ */
 
 #contact-page{width: 100%;
-height: auto;
+height: 100vh;
 margin: auto;
-padding-top:10vw;
-padding-bottom: 20vw;}
+padding-top:13vw;}
 
 #contact-page h1{
 	font: 600 5vw 'Montserrat', sans-serif;
@@ -716,9 +737,8 @@ border: 1px solid #000;}
 
 /* ------------------------------------------------ABOUT------------------------------------------------ */
 #about-page{width: 100%;
-height: auto;
-padding-top: 10vw;
-padding-bottom: 20%;}
+height: 100vh;
+padding-top: 20vw;}
 
 #about-container{
 	width: 80%;
@@ -729,7 +749,6 @@ padding-bottom: 20%;}
 }
 
 .filler{width: 80%;
-	margin-top: 2vw;
 height: 400px;
 background-color: blue;
 margin-right: 10vw;}
@@ -795,12 +814,7 @@ border: 1px solid #000;}
 	background-color: transparent;
 border: 1px solid #000;}
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
+
 
 
 /* TO STYLIZE RESPONSIVE HEADER */
@@ -847,13 +861,10 @@ border: 1px solid #000;}
 
 	.button{font: 600 14px 'Montserrat', sans-serif;}
 
+	
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
+
+
 
 /* tablet size AND SMALLER stuff here */
 @media screen and (max-width: 1040px) {
@@ -862,6 +873,7 @@ border: 1px solid #000;}
 
 .cursor-dot,
 .cursor-dot-outline {display: none;}
+
 
 	#intro-static {
 		position: absolute;
@@ -892,65 +904,102 @@ border: 1px solid #000;}
 		height:2.3vw;
 	}
 
-	#arrow{display: block;
-		position: absolute;
-		width: 4.5vw;
-		right: 13vw;
-		margin-top: -4.5vw;
+
+
+
+
+/* --------------------------------------DETAIL PAGES TABLET-------------------------------------- */
+
+	#detail-page{
+		padding-top: 25%;
+		flex-direction: column;
+	}
+
+	.fixed{width: 100%;
+		position: relative;
+		top: 22%;
 	}
 	
-		
-	.footer{
-		height: 3vw;
-		margin-top: none;
+	.scrolling{width: 100%;
+		margin-top: 5vw;
 	}
 	
+	.blurb{
+		width: 90%;
+		margin: auto;
+		margin-top: 3vw;
+		height: auto;
+		overflow: auto;
+		direction:ltr;
+		}
+	
+	.main-carousel{width: 100%;}
 
-	.footer a{
-		font-size: 1.5vw;
-		margin-left: 60vw;
+	
+	  .flickity-button.flickity-prev-next-button.next{
+		right: -40vw;
+		cursor: none;}
+	
+	.flickity-button.flickity-prev-next-button.previous{
+		left: -40vw;
+		cursor: none;}
+
+	.flickity-page-dots{bottom: 2%;
+	}
+
+	
+
+
+
+
+
+	#contact-page{
+		padding-top: 30%;
 	}
 
 
-/* ------------------------------------ABOUT-Tablet------------------------------------ */
 
-	#about-page{
-		width: 100%;
+	#about-page{width: 100%;
 		height: 100vh;
 		padding-top: 20vw;}
 		
-	#about-container{
-		width: 80%;
-		height: auto;
-		margin: auto;
-		display: flex;
-		justify-content: space-around;
+		#about-container{
+			width: 80%;
+			height: auto;
+			margin: auto;
+			display: flex;
+			justify-content: space-around;
 		}
 		
-	.filler{
-		width: 80%;
+		.filler{width: 80%;
 		height: 400px;
 		background-color: blue;
-		margin-right: 3vw;
-	}
+		margin-right: 3vw;}
 		
-	.about-text p{
-		font: 400 16px 'roboto', sans-serif;
-		padding-bottom: 10px;
-	}
+		
+		
+		.about-text p{
+			font: 400 16px 'roboto', sans-serif;
+			padding-bottom: 10px;
+		}
 
-	/* ------------------------------------CONTACT-Tablet------------------------------------ */
-	#contact-page{
-		padding-top: 20vw;
-		height: 100vh;
-	}
+		#arrow{display: block;
+			position: absolute;
+			width: 4.5vw;
+			right: 13vw;
+			margin-top: -4.5vw;}
+		
+		
+			.footer{
+				height: 3vw;
+				margin-top: none;
+				}
+		
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
+			.footer a{font-size: 1.5vw;
+			margin-left: 60vw;}
+
+
 
 /* for smaller tablets */
 @media screen and (max-width: 766px) {
@@ -968,6 +1017,9 @@ border: 1px solid #000;}
 		text-align: center;
 		padding-top: 0%;
 	}
+
+
+
 
 	#wheel {
 		position: absolute;   
@@ -1073,11 +1125,13 @@ nav a{display: none;}
 }
 
 #menuToggle .navtitle {
+	
 	background-color: #fff;
 	text-align: center;
 	font: 600 18px 'Montserrat', sans-serif;
 	letter-spacing: 3px;
 	right: 100%;
+
 	color: #000;
 
 }
@@ -1107,7 +1161,7 @@ nav a{display: none;}
 	transform: rotate(-45deg) translate(0, -1px);
 }
 
-#menu{
+#menu {
 	position: absolute;
 	width: 300px;
 	height: 100vh;
@@ -1151,8 +1205,6 @@ header{margin: auto;}
 
 }
 
-/* ------------------------------------ABOUT-SmallTablet------------------------------------ */
-
 
 #about-page{width: 100%;
 	height: auto;
@@ -1170,63 +1222,10 @@ header{margin: auto;}
 	.filler{margin: auto;}
 	
 
-/* ------------------------------------CONTACT-SmallTablet------------------------------------ */
 
-
-#contact-page{
-	padding-top: 30vw;
-	padding-bottom: 90vh;
-	height: auto;
-}
-
-/* ------------------------------------DETAIL PAGES-SmallTablet------------------------------------ */
 
 
 	
-#detail-page{
-	padding-top: 25%;
-	flex-direction: column;
-
-}
-
-
-.fixed{width: 100%;
-	
-	position: relative;
-	top: 22%;
-	
-}
-
-.scrolling{width: 100%;
-	
-	margin-top: 5vw;
-}
-
-.blurb{
-	width: 90%;
-	margin: auto;
-	margin-top: 3vw;
-	height: auto;
-	overflow: auto;
-	direction:ltr;
-	}
-
-.main-carousel{width: 100%;}
-	.flickity-prev-next-button.previous{
-		left: -40vw;
-	}
-	.flickity-prev-next-button.next{
-	  right: -40vw;
-  }
-
-
-
-
-
-
-
-
-
 
 
   

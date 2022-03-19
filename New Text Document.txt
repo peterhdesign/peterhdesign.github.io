@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+<link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+<script src="/path/to/flickity.pkgd.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/flickity-fullscreen@1/fullscreen.css">
+
+<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script>
+
+</head>
+
+
+
+
+
+<div class="main-carousel">
+  <div class="carousel-cell"><img src="images/Cruisewatch/process-brandsheet.jpg"><p>Branding Sheet<p></h1></div>
+  <div class="carousel-cell"><img src="images/Cruisewatch/process-flow.jpg"><p>Process Flow</p></div>
+  <div class="carousel-cell"><img src="images/Cruisewatch/process-qna.jpg"><p>Reseach Interviews</p></div>
+  <div class="carousel-cell"><img src="images/Cruisewatch/process-homepage-wireframe1.jpg"><p>Homepage Wireframe Ver 1 (Desktop)</p></div>
+  <div class="carousel-cell"><img src="images/Cruisewatch/process-homepage-wireframe2.jpg"><p>Homepage Wireframe Ver 2 (Desktop)</p></div>
+  <div class="carousel-cell"><img src="images/Cruisewatch/process-homepage-wireframe1-mobile.jpg"><p>Homepage Wireframe Ver 1 (Mobile)</p></div>
+  <div class="carousel-cell"><img src="images/Cruisewatch/process-homepage-wireframe2-mobile.jpg"><p>Homepage Wireframe Ver 2 (Mobile)</p></div>
+  <div class="carousel-cell"><img src="images/Cruisewatch/process-cardsorting2.jpg"><p>Cardsorting Activity (1/3)</p></div>
+  <div class="carousel-cell"><img src="images/Cruisewatch/process-cardsorting2.jpg"><p>Cardsorting Activity (2/3)</p></div>
+  <div class="carousel-cell"><img src="images/Cruisewatch/process-cardsorting3.jpg"><p>Cardsorting Activity (3/3)</p></div>
+</div>
+
+
+<div class="carousel" data-flickity='{ "fullscreen": true, "wrapAround": true}'>
+  <div class="carousel-cell"><img src="magazine-ad-flat.jpg"><p>Branding Sheet</p></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+</div>
