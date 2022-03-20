@@ -1189,8 +1189,8 @@ nav a{display: none;}
 	display: flex;
 flex-direction: column;
 justify-content: space-evenly;
-
 }
+
 .social-mobile img{width: 25%;}
 
 nav a:hover:before, nav a:focus:before, nav a:active:before {
