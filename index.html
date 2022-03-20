@@ -1,9 +1,10 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <title>Peter Hoang</title>
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<head>
+    <title>Peter Hoang</title>
+
+<!-- FAV ICON -->
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
 <link rel="manifest" href="favicon_io/site.webmanifest">
@@ -11,26 +12,29 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
-        <!-- perstrok.js -->
-        <script src="https://cdn.jsdelivr.net/perstrok.js/1.0.1/perstrok.min.js"></script>
-       
-        <!-- isotope -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-        <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
-        <!-- Spinning Wheel -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
-         
-        <!-- link to your CSS files here -->
-        <!-- maybe link to your js here, maybe at the end of body --> 
-        
-        <link href="style.css" rel="stylesheet" type="text/css">	
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&amp;display=swap" rel="stylesheet">
-        
-    <meta name="viewport" content="width=device-width">
+
+<!-- FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<!-- FLICKITY -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<!-- JQUERY -->
+<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"></script>
+<!-- CURSOR JS -->
+<script src="js/cursor.js"></script>
+<!-- perstrok.js -->
+<script src="https://cdn.jsdelivr.net/perstrok.js/1.0.1/perstrok.min.js"></script>
+<!-- isotope -->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
+<!-- STYLE SHEET -->
+<link href="style.css" rel="stylesheet" type="text/css" />	
+<meta name="viewport" content="width=device-width">
+</head>
 
 <body>
     <div class="cursor-dot-outline"></div>
@@ -77,22 +81,8 @@
 			</ul>
 		</div>
 	</div>
-
 </nav>
 
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
 
 
     <div id="container">
@@ -176,17 +166,7 @@
                 <img src="images/thumbnail-pho.jpg"></a>
                 <div id="mobilegaltext">Pho Viet Royal</div>
             </div>
-                        
-            <!-- <div class="grid-item branding graphicdesign">
-                <a href="kemicecreamlounge.html">
-                <div class="galtext kem">
-                <h2>KEM Ice Cream Lounge</h2>
-                <h3>Branding & Brand Invention</h3>
-                </div>
-                <img src="images/thumbnail-kem.jpg"></a>
-                <div id="mobilegaltext">KEM Ice Cream Lounge</div>
-            </div> -->
-                        
+                                               
             <div class="grid-item advertising photography graphicdesign">
                 <a href="f91w.html">
                 <div class="galtext f91w">
@@ -237,9 +217,6 @@
 
 
 
-
-
-
  
 </div>  <!-- Closing Container -->
 
@@ -248,228 +225,15 @@
 
 
 
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-------------------------------------------------------------------- JAVA SCRIPT -------------------------------------------------------------------->
-
-<!-- isotope -->
-<script>
-var $grid = $('.grid').isotope({
-  itemSelector: '.grid-item',
-  percentPosition: true,
-  masonry: {
-    columnWidth: '.grid-sizer',
-    gutter: '.gutter-sizer'
-  }
-});
-
-// layout Isotope after each image loads
-$grid.imagesLoaded().progress( function() {
-  $grid.isotope('layout');
-});
-
-    // filter functions
-    var filterFns = {
-        // show if number is greater than 50
-        numberGreaterThan50: function() {
-            var number = $(this).find('.number').text();
-            return parseInt(number, 10) > 50;
-        },
-        // show if name ends with -ium
-        ium: function() {
-            var name = $(this).find('.name').text();
-            return name.match(/ium$/);
-        }
-    };
-    // bind filter button click
-    $('.filters-button-group').on('click', 'button', function() {
-        var filterValue = $(this).attr('data-filter');
-        // use filterFn if matches value
-        filterValue = filterFns[filterValue] || filterValue;
-        $grid.isotope({
-            filter: filterValue
-        });
-    });
-    // change is-checked class on buttons
-    $('.button-group').each(function(i, buttonGroup) {
-        var $buttonGroup = $(buttonGroup);
-        $buttonGroup.on('click', 'button', function() {
-            $buttonGroup.find('.is-checked').removeClass('is-checked');
-            $(this).addClass('is-checked');
-        });
-    });
-
-</script>
+<!-- ISOTOPE -->
+<script src="js/isotope.js"></script>
 
 <!-- perstrok -->
-<script> var instance = new Perstrok('#intro').init(); </script>
-<script> var instance = new Perstrok('#intro2').init(); </script>
+<script src="js/perstrok.js"></script>
 
 <!-- wheel -->
-<script>
-window.onscroll = function () {
-    scrollRotate();
-};
+<script src="js/wheel.js"></script>
 
-function scrollRotate() {
-    let image = document.getElementById("wheel");
-    image.style.transform = "rotate(" + window.pageYOffset/5 + "deg)";
-}
-</script>
-
-<!-- cursor -->
-<script>
-    var cursor = {
-    delay: 8,
-    _x: 0,
-    _y: 0,
-    endX: (window.innerWidth / 2),
-    endY: (window.innerHeight / 2),
-    cursorVisible: true,
-    cursorEnlarged: false,
-    $dot: document.querySelector('.cursor-dot'),
-    $outline: document.querySelector('.cursor-dot-outline'),
-    
-    init: function() {
-        // Set up element sizes
-        this.dotSize = this.$dot.offsetWidth;
-        this.outlineSize = this.$outline.offsetWidth;
-        
-        this.setupEventListeners();
-        this.animateDotOutline();
-    },
-    
-//     updateCursor: function(e) {
-//         var self = this;
-        
-//         console.log(e)
-        
-//         // Show the cursor
-//         self.cursorVisible = true;
-//         self.toggleCursorVisibility();
-
-//         // Position the dot
-//         self.endX = e.pageX;
-//         self.endY = e.pageY;
-//         self.$dot.style.top = self.endY + 'px';
-//         self.$dot.style.left = self.endX + 'px';
-//     },
-    
-    setupEventListeners: function() {
-        var self = this;
-        
-        // Anchor hovering
-        document.querySelectorAll('a').forEach(function(el) {
-            el.addEventListener('mouseover', function() {
-                self.cursorEnlarged = true;
-                self.toggleCursorSize();
-            });
-            el.addEventListener('mouseout', function() {
-                self.cursorEnlarged = false;
-                self.toggleCursorSize();
-            });
-        });
-        
-        // Click events
-        document.addEventListener('mousedown', function() {
-            self.cursorEnlarged = true;
-            self.toggleCursorSize();
-        });
-        document.addEventListener('mouseup', function() {
-            self.cursorEnlarged = false;
-            self.toggleCursorSize();
-        });
-  
-  
-        document.addEventListener('mousemove', function(e) {
-            // Show the cursor
-            self.cursorVisible = true;
-            self.toggleCursorVisibility();
-
-            // Position the dot
-            self.endX = e.pageX;
-            self.endY = e.pageY;
-            self.$dot.style.top = self.endY + 'px';
-            self.$dot.style.left = self.endX + 'px';
-        });
-        
-        // Hide/show cursor
-        document.addEventListener('mouseenter', function(e) {
-            self.cursorVisible = true;
-            self.toggleCursorVisibility();
-            self.$dot.style.opacity = 1;
-            self.$outline.style.opacity = 1;
-        });
-        
-        document.addEventListener('mouseleave', function(e) {
-            self.cursorVisible = true;
-            self.toggleCursorVisibility();
-            self.$dot.style.opacity = 0;
-            self.$outline.style.opacity = 0;
-        });
-    },
-    
-    animateDotOutline: function() {
-        var self = this;
-        
-        self._x += (self.endX - self._x) / self.delay;
-        self._y += (self.endY - self._y) / self.delay;
-        self.$outline.style.top = self._y + 'px';
-        self.$outline.style.left = self._x + 'px';
-        
-        requestAnimationFrame(this.animateDotOutline.bind(self));
-    },
-    
-    toggleCursorSize: function() {
-        var self = this;
-        
-        if (self.cursorEnlarged) {
-            self.$dot.style.transform = 'translate(-50%, -50%) scale(0.75)';
-            self.$outline.style.transform = 'translate(-50%, -50%) scale(1.5)';
-        } else {
-            self.$dot.style.transform = 'translate(-50%, -50%) scale(1)';
-            self.$outline.style.transform = 'translate(-50%, -50%) scale(1)';
-        }
-    },
-    
-    toggleCursorVisibility: function() {
-        var self = this;
-        
-        if (self.cursorVisible) {
-            self.$dot.style.opacity = 1;
-            self.$outline.style.opacity = 1;
-        } else {
-            self.$dot.style.opacity = 0;
-            self.$outline.style.opacity = 0;
-        }
-    }
-}
-
-cursor.init();
-</script>
 
 
 </body>
