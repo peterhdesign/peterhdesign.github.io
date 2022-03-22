@@ -1244,8 +1244,17 @@ header{margin: auto;}
 		
 		.about-pic img{width: 70%;
 		}
-	
 
+		.about-text h2{font: 600 6vw 'Playfair Display', serif;
+			font-style: italic;
+			background-color: #000;}
+	
+		.websitebutton h2{font: 600 4vw 'Playfair Display', serif;
+			font-style: italic;
+			background-color: #000;
+			width: 50%;}
+		
+		
 
  /* PROJECT BUTTONS */
  #project-buttons{
