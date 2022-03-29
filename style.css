@@ -673,8 +673,71 @@ h1.mindamins {padding: 5%;}
 .zoom img::selection {
 	background-color: transparent;}
 
+/* ------------------------------------------------PROCESS PAGE------------------------------------------------ */
+#process-page{
+	padding-top: 10vw;
+	padding-bottom: 20vw;
+	margin: auto;
+	text-align: center;
+	}
 
+	#process-page img{
+	margin: auto;}
 
+	#process-page p{
+	width: 60%;
+	font: 400 17px 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	padding-bottom: 10px;
+	margin: auto;
+	text-align: left;
+	}
+
+	#process-page span{font-weight: 500;}
+
+	#process-page h1{font: 600 4vw 'Playfair Display', serif;
+	color: #000;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 2%;
+	text-align: center;
+	font-style: italic;
+	}
+
+	#process-page h2{font: 600 3vw 'Montserrat', sans-serif;
+	text-align: left;
+	width: 70%;
+	border-bottom: 1px solid #000;
+	margin: auto;
+	margin-bottom: 2%;
+	margin-top: 3%;}
+
+	.process-pics{
+		margin: auto;
+		margin-top: 2%;
+	text-align: center;}
+
+	.wireframes{width: 90%;
+		display: flex;
+	flex-direction: row;
+justify-content: space-between;}
+
+	ul{width: 65%;
+		font: 400 18px 'Roboto', sans-serif;
+		letter-spacing: 1px;
+		margin: auto;
+		list-style-type: disc;
+		text-align: left;
+	}
+	li{margin-left: 6%;
+	padding-bottom: 1%;
+	text-align: left;}
+
+	#process-page h3{font: 500 2vw 'Montserrat', sans-serif;
+		text-align: left;
+		width: 60%;
+		margin: auto;
+		margin-top: 3%;}
 /* ------------------------------------------------CONTACT------------------------------------------------ */
 
 #contact-page{width: 100%;
@@ -852,6 +915,12 @@ border: 1px solid #000;}
 		top: 15vw;
 		left: 10vw;
 		padding-top: 10%;
+	}
+	/* ------------------------------------------------PROCESS PAGE------------------------------------------------ */
+	#process-page p{
+	width: 65%;
+	}
+	#process-page h3{width: 65%;
 	}
 
 /* TO STYLIZE RESPONSIVE HEADER 3*/
@@ -1266,7 +1335,8 @@ header{margin: auto;}
 			background-color: #000;
 			width: 50%;}
 		
-.projectpics{margin-top: 10%;}
+.projectpics{
+	margin-top: 10%;}
 
  /* PROJECT BUTTONS-small tablet */
  #project-buttons{
@@ -1383,8 +1453,33 @@ font-weight: 500;}
 	}
 
 
+/* Process Page */
+#process-page p{
+	width: 90%;
+	}
 
 
+	#process-page h2{
+	width: 90%;
+font-size: 22px;}
+
+
+	ul{width: 90%;
+		font: 400 18px 'Roboto', sans-serif;
+		letter-spacing: 1px;
+		margin: auto;
+		list-style-type: disc;
+		text-align: left;
+	}
+	li{margin-left: 6%;
+	padding-bottom: 1%;
+	text-align: left;}
+
+	#process-page h3{font: 500 18px 'Montserrat', sans-serif;
+		text-align: left;
+		width: 90%;
+		margin: auto;
+		margin-top: 3%;}
 
 
 }

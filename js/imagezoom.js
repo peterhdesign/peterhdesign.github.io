@@ -87,3 +87,39 @@ $(document).ready(function(){
       on: "click"
     });
   });
+
+  $(document).ready(function(){
+    $('#zoom16').zoom({
+      on: "click"
+    });
+  }); 
+  
+  $(document).ready(function(){
+    $('#zoom17').zoom({
+      on: "click"
+    });
+  });
+  
+  $(document).ready(function(){
+    $('#zoom18').zoom({
+      on: "click"
+    });
+  });
+  
+  $(document).ready(function(){
+    $('#zoom19').zoom({
+      on: "click"
+    });
+  });
+  
+  $(document).ready(function(){
+    $('#zoom20').zoom({
+      on: "click"
+    });
+  });
+  
+  $(document).ready(function(){
+    $('#zoom21').zoom({
+      on: "click"
+    });
+  });
