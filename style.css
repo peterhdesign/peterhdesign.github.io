@@ -859,32 +859,58 @@ margin-bottom: 2%;}
 	
 .about-text h2:hover{
 	background-color: transparent;
-border: 1px solid #000;}
+	border: 1px solid #000;}
 
 
 .websitebutton{width: 40%;
-margin: auto;}
+	margin: auto;
+	background-color: #000;
+	border: 1px solid #000;
+	color: #fff;
+	border-radius: 80px;
+	transition: .3s ease;}
+
+.websitebutton a{
+	text-decoration: none;
+	color: #fff;
+	width: 40%;
+	transition: .3s ease;}
+
+.cruisewatch-prototype-buttons{display: flex;
+	flex-direction: row;}
+
+.cruisewatch-prototype-buttons .websitebutton{
+	width: 30%;
+	margin: auto;
+	margin-bottom: 2%;
+	margin-top: 2%;
+	transition: .3s ease;}
+	
+.cruisewatch-prototype-buttons .websitebutton a{
+	width: 30%;
+	text-decoration: none;
+	color: #fff;
+	transition: .3s ease;
+	}
+	
+.cruisewatch-prototype-buttons .websitebutton h2{
+	font: 600 1.5vw 'Playfair Display', serif;
+	font-style: italic;
+	letter-spacing: .05vw;
+	}
+	
+.websitebutton a:hover{
+	color: #000;
+	background-color: #fff;}
+	
+.websitebutton:hover{
+	background-color: #fff;
+	border: 1px solid #000;}
 
 .websitebutton h2{font: 600 2.5vw 'Playfair Display', serif;
 	font-style: italic;
-	background-color: #000;
-	border-radius: 80px;
 	text-align: center;
-	border: 1px solid #000;
-	transition: .3s ease;}
-
-	.websitebutton a{
-	text-decoration: none;
-	color: #fff;
-	width: 40%;}
-
-	.websitebutton a:hover{
-	color: #000;}
-	
-	.websitebutton h2:hover{
-	background-color: transparent;
-border: 1px solid #000;}
-
+}
 
 
 
@@ -1043,7 +1069,10 @@ border: 1px solid #000;}
 
 	.flickity-page-dots{bottom: 1%;
 	}
-
+	.websitebutton{width: 80%;}
+		
+	.websitebutton a{
+		width: 80%;}
 	
 /* --------------------------------------CONTACT TABLET-------------------------------------- */
 
@@ -1329,9 +1358,8 @@ header{margin: auto;}
 			font-style: italic;
 			background-color: #000;}
 	
-		.websitebutton h2{font: 600 4vw 'Playfair Display', serif;
-			font-style: italic;
-			background-color: #000;
+		.websitebutton{font: 600 6vw 'Playfair Display', serif;
+			
 			width: 50%;}
 		
 .projectpics{
