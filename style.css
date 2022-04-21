@@ -780,7 +780,9 @@ justify-content: space-between;}
 		.websitebutton h2{font: 600 2.5vw 'Playfair Display', serif;
 			font-style: italic;
 			text-align: center;
+		
 		}
+	.space{height: 1vw;}
 		
 /* ------------------------------------------------CONTACT------------------------------------------------ */
 
@@ -1397,7 +1399,8 @@ header{margin: auto;}
 	
 		.websitebutton{font: 600 6vw 'Playfair Display', serif;
 			
-			width: 50%;}
+			width: 50%;
+	}
 		
 .projectpics{
 	margin-top: 10%;}
