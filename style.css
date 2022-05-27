@@ -426,14 +426,13 @@ border-left: 2px solid;
 
 /* ----------------FOOTER---------------- */
 
+.cross-gif{padding-top: 3vw;}
 .footer{
 	width: 95%;
 	background-color: #000;
 	height: 2vw;
 	margin: auto;
 	padding-top: .46vw;
-
-	
 	}
 
 .footer a{
@@ -476,8 +475,6 @@ h1.mindamins {padding: 5%;}
 	justify-content: space-around;
 	flex-direction: row;
 	margin: auto;
-	padding-bottom: 3vw;
-	
 }
 
 
@@ -675,7 +672,7 @@ h1.mindamins {padding: 5%;}
 
 /* ------------------------------------------------PROCESS PAGE------------------------------------------------ */
 #process-page{
-	padding-top: 10vw;
+	padding-top: 5vw;
 	padding-bottom: 20vw;
 	margin: auto;
 	text-align: center;
@@ -731,7 +728,8 @@ justify-content: space-between;}
 	}
 	li{margin-left: 6%;
 	padding-bottom: 1%;
-	text-align: left;}
+	text-align: left;
+	font-size: 17px;}
 
 	#process-page h3{font: 500 2vw 'Montserrat', sans-serif;
 		text-align: left;
